@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+
+   
+   <div class="ctn2">
+    <img src="images/gartcod-without-bg.webp">
+    <h2 >  For <span id="div2"> <svg id="div7" xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="white"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg> Cloud & <br> Gaming </span></h2>
+</div>
+     
+
+    <div class="cnt">
+        <p>Join us on the launch of gartcod by</p>
+         <img src="images/ass-removebg-preview.png" alt="">
+    </div>
+
+       <div class="main">        
+        <div class="launch-time">
+            <div>
+                <p  id="days">00</p>
+                <span id="div3">DAYS</span>
+            </div>
+
+            <div>
+                <p id="hours">00</p>
+                <span id="div4">HOURS</span>
+            </div>
+
+            <div>
+                <p id="minutes">00</p>
+                <span id="div5">MINUTES</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span id="div6">SECONDS</span>
+            </div>
+        </div>
+        <button type="button" id="div1">Claim Ticket</button>
+    </div>
+
+    </div>
+
+
+
+    <script>
+        var countD = new Date("Jan 30, 2024 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countD - now;
+
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+
+         document.getElementById("days").innerHTML = days;
+         document.getElementById("hours").innerHTML = hours;
+         document.getElementById("minutes").innerHTML = minutes;
+         document.getElementById("seconds").innerHTML = seconds;
+
+        },1000);
+
+
+
+
+        var i = 0;
+        var j = 0; 
+
+        function divchange(){
+            var div = document.getElementById("div1");
+            var bgc = ['white', 'yellow', 'pink'];
+            var texb = ['black'];
+            div.style.backgroundColor = bgc[i];
+            div.style.color=texb[j];
+            i=(i+1)%bgc.length;
+            j=(j+1)%texb.length;
+
+        }
+        setInterval(divchange,3000);
+    </script>
+    <script>
+
+
+        var l = 0; 
+
+        function divcha(){
+            var div2 = document.getElementById("div2");
+           
+            var texb1 = ['white', 'yellow', 'pink'];
+            
+            div2.style.color=texb1[l];
+    
+            l=(l+1)%texb1.length;
+
+        }
+        setInterval(divcha,3000);
+    </script>
+
+<script>
+
+
+    var k = 0; 
+
+    function divch(){
+        var div3 = document.getElementById("div3");
+       
+        var texb2 = ['white', 'yellow', 'pink'];
+        
+        div3.style.color=texb2[k];
+
+        k=(k+1)%texb2.length;
+
+    }
+    setInterval(divch,3000);
+</script>
+
+<script>
+
+
+    var l1 = 0; 
+
+    function divc(){
+        var div4 = document.getElementById("div4");
+       
+        var texb3 = ['white', 'yellow', 'pink'];
+        
+        div4.style.color=texb3[l1];
+
+        l1=(l1+1)%texb3.length;
+
+    }
+    setInterval(divc,3000);
+</script>
+
+<script>
+
+
+    var l12 = 0; 
+
+    function div(){
+        var div5 = document.getElementById("div5");
+       
+        var texb4 = ['white', 'yellow', 'pink'];
+        
+        div5.style.color=texb4[l12];
+
+        l12=(l12+1)%texb4.length;
+
+    }
+    setInterval(div,3000);
+</script>
+
+<script>
+
+
+    var l13 = 0; 
+
+    function dik(){
+        var div6 = document.getElementById("div6");
+       
+        var texb5 = ['white', 'yellow', 'pink'];
+        
+        div6.style.color=texb5[l13];
+
+        l13=(l13+1)%texb5.length;
+
+    }
+    setInterval(dik,3000);
+</script>
+<script>
+
+
+    var l14 = 0; 
+
+    function dim(){
+        var div7 = document.getElementById("div7");
+       
+        var texb6 = ['white', 'yellow', 'pink'];
+        
+        div7.style.fill=texb6[l14];
+
+        l14=(l14+1)%texb6.length;
+
+    }
+    setInterval(dim,3000);
+</script>
+</body>
+</html>
